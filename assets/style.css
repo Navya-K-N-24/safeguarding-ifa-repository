@@ -30,6 +30,28 @@ section {
     margin-bottom: 20px;
 }
 
+/* Hero section */ 
+
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
@@ -55,6 +77,10 @@ section {
     section {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .hero-text {
+        font-size: 1.5em;
     }
 }
 
@@ -83,6 +109,10 @@ section {
         width: 80%;
         margin-bottom: 20px;
     }
+
+    .hero-text {
+        font-size: 2em;
+    }
 }
 
 /* Desktop Styles */
@@ -109,5 +139,9 @@ section {
     section {
         width: 60%;
         margin-bottom: 20px;
+    }
+
+    .hero-text {
+        font-size: 3em;
     }
 }
