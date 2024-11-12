@@ -30,26 +30,39 @@ section {
     margin-bottom: 20px;
 }
 
+/* Background Colors */
+#header {
+    background-color: #f8d7da; 
+}
+
+#main-content {
+    background-color: #d4edda;
+}
+
+#footer {
+    background-color: #cce5ff;
+}
+
 /* Hero section */ 
 
-.hero-image {
+/* .hero-image {
     position: relative;
     text-align: center;
     color: white;
-}
+} */
 
-.hero-image img {
+/* .hero-image img {
     width: 100%;
     height: auto;
-}
+} */
 
-.hero-text {
+/* .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
-}
+} */
 
 
 /* Mobile Styles */
@@ -79,10 +92,10 @@ section {
         margin-bottom: 20px;
     }
 
-    .hero-text {
+    /* .hero-text {
         font-size: 1.5em;
-    }
-}
+    } */
+} 
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
