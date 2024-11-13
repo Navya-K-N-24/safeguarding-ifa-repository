@@ -22,10 +22,57 @@ header, main, footer {
     padding: 1rem;
 }
 
-header {
+/* header {
     background-color: #f8d7da;
+} */
+
+h1 {
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+    font-size: xx-large; 
+    letter-spacing: 2px;
+    color: #ee4d98;
 }
 
+#menu {
+    font-size: large;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 0.3em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with toggle dropdown */
+nav {
+    position: absolute;
+    background-color: rgb(203, 193, 223);
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 #main-content {
     background-color: #d4edda;
     padding-top: 4rem;
