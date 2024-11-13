@@ -1,45 +1,29 @@
-/* Google fonts import */ 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
-
-/* Asterisk wildcard selector to override default styles added by the browser */
+/* Global Styles */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/* General Styles */
+
 body {
-    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    color: #3a3a3a;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    /* Generic project styles */ 
-    color: 3a3a3a;
-    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
 }
 
-header, nav, main, footer {
-    /* background-color: #ecb9b9; */
-    /* padding: 100 1rem; */
-    /* position: fixed; */
-    /* z-index: 99; */
-    /* width: 100%; */
-    box-shadow: 0 2px 2px #3a3a3a; 
-    padding: 1rem;
-    /* position: relative; */
+header, main, footer {
     width: 100%;
+    padding: 1rem;
 }
 
-/* nav, main, footer {
-    padding: 1rem 2rem;
-} */
-
-/* Background Colors */
-#header {
-    background-color: #f8d7da; 
+header {
+    background-color: #f8d7da;
 }
 
 #main-content {
@@ -47,12 +31,11 @@ header, nav, main, footer {
     padding-top: 4rem;
 }
 
-#footer {
+footer {
     background-color: #ffd580;
 }
 
-/* Hero section */ 
-
+/* Hero Image Section */
 .hero-image {
     position: relative;
     text-align: center;
@@ -62,27 +45,31 @@ header, nav, main, footer {
 .hero-image img {
     width: 100%;
     height: auto;
-} 
+}
 
 .hero-text {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
 }
 
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
-    /* margin: 0 1rem; */
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -90,16 +77,17 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
 }
 
 nav ul li a:hover {
     background-color: #d4edda;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 section {
@@ -112,31 +100,19 @@ section {
         font-size: 14px;
     }
 
-    /* header, nav, main, footer {
-        padding: 10px;
-    } */
-
     nav ul {
-        display: block;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
         margin-bottom: 10px;
     }
 
-    .container {
-        display: block;
-    }
-
-    section {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    /*.hero-text {
+    .hero-text {
         font-size: 1.5em;
-    } */
-} 
+    }
+}
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -144,28 +120,17 @@ section {
         font-size: 18px;
     }
 
-    /* header, nav, main, footer {
-        padding: 20px;
-    } */
-
     nav ul {
-        display: flex;
         justify-content: space-around;
     }
 
     .container {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     section {
         width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .hero-text {
-        font-size: 2em;
     }
 }
 
@@ -175,24 +140,17 @@ section {
         font-size: 16px;
     }
 
-    /* header, nav, main, footer {
-        padding: 30px;
-    } */
-
     nav ul {
-        display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .container {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     section {
         width: 60%;
-        margin-bottom: 20px;
     }
 
     .hero-text {
