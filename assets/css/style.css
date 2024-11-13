@@ -1,9 +1,16 @@
+/* Google fonts import */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    /* Generic project styles */ 
+    color: 3a3a3a;
+    font-family: 'Lato', sans-serif;
 }
 
 header, nav, main, footer {
@@ -40,7 +47,7 @@ section {
 }
 
 #footer {
-    background-color: #cce5ff;
+    background-color: #ffd580;
 }
 
 /* Hero section */ 
